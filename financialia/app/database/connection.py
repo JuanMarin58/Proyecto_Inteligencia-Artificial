@@ -2,7 +2,7 @@ from dotenv import load_dotenv
 import os
 import asyncpg
 
-class Database:
+class DatabaseConnection:
     def __init__(self):
         # Cargar las variables de entorno desde el archivo .env
         load_dotenv()

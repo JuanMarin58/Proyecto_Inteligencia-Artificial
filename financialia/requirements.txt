@@ -17,3 +17,4 @@ requests
 nltk
 python-multipart
 python-dotenv
+openpyxl
