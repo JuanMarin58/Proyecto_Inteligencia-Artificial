@@ -102,10 +102,3 @@ Luego abre tu navegador en [http://localhost:8000](http://localhost:8000) para i
 ## Contribuciones
 
 Las contribuciones son bienvenidas. Por favor abre un issue o un pull request para sugerir mejoras o corregir errores.
-
----
-
-## Licencia
-
-Este proyecto está bajo licencia MIT. Consulta el archivo `LICENSE` para más detalles.
-
