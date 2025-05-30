@@ -1,17 +1,17 @@
+from dotenv import load_dotenv
+import os
 import asyncpg
-import logging
-from datetime import datetime
-from utils.logger import logger
 
-
-class DatabaseConnection():
-    
+class Database:
     def __init__(self):
-        self.BD_USER = "postgres"
-        self.BD_PASSWORD = "2025"
-        self.DB_HOST = "localhost"
-        self.DB_PORT = 5432
-        self.DB_NAME = "predicciones_db"
+        # Cargar las variables de entorno desde el archivo .env
+        load_dotenv()
+
+        self.BD_USER = os.getenv("DB_USER")
+        self.BD_PASSWORD = os.getenv("DB_PASSWORD")
+        self.DB_HOST = os.getenv("DB_HOST")
+        self.DB_PORT = int(os.getenv("DB_PORT"))
+        self.DB_NAME = os.getenv("DB_NAME")
 
     async def get_connection(self):
         try:
@@ -22,9 +22,6 @@ class DatabaseConnection():
                 port=self.DB_PORT,
                 database=self.DB_NAME
             )
-            logger.info("Conexión a la base de datos establecida.")
             return conn
         except Exception as e:
-            logger.error(f'Error al conectar a la base de datos: {e}')
-            raise
-    
+            print("Error de conexión:", e)

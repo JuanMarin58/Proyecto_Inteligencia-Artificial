@@ -15,4 +15,5 @@ yfinance
 jinja2
 requests
 nltk
-python-multipart 
+python-multipart
+python-dotenv
