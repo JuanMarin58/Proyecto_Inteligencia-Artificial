@@ -96,9 +96,3 @@ Luego abre tu navegador en [http://localhost:8000](http://localhost:8000) para i
 - `.env` — Archivo de configuración local con variables de entorno (no incluido en el repositorio).
 
 - `requirements.txt` — Listado de dependencias Python necesarias para el proyecto.
-
----
-
-## Contribuciones
-
-Las contribuciones son bienvenidas. Por favor abre un issue o un pull request para sugerir mejoras o corregir errores.
